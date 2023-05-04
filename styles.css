@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.home {
+  background: transparent url("images/background-banner.png") 0% 0% no-repeat
+    padding-box;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+}
+.home-banner {
+  background: transparent linear-gradient(131deg, #ec008c 0%, #fc6767 100%) 0%
+    0% no-repeat padding-box;
+  opacity: 0.9;
+  height: 100vh;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 40px;
+  color: #fff;
+}
+
+.hover-underline-animation,
+.hover-underline-animation:link,
+.hover-underline-animation:visited {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 4px; /* The distance between text and underline */
+}
+
+.hover-underline-animation::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background-image: linear-gradient(90deg, white, white); /* underline color */
+  background-size: 0 2px; /* vertical size of underline */
+  background-repeat: no-repeat;
+  background-position: left bottom; /* start position of underline */
+  transition: background-size 0.3s ease-in; /* duration and timing style of animation */
+}
+
+.hover-underline-animation:hover::before {
+  background-size: 100% 2px;
+}
+
+.logo p {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.nav-items a {
+  margin-right: 40px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+}
+.banner-text {
+  color: #fff;
+  padding-left: 3%;
+  padding-top: 13%;
+}
+.banner-text-big {
+  font-size: xx-large;
+  font-weight: 900;
+}
+.text-green {
+  color: #00ffb3;
+}
+.designation {
+  padding: 20px 0 60px 0;
+  /* opacity: 0.6; */
+  /* font-weight: 600; */
+}
+.download-btn {
+  text-decoration: none;
+  /* font-weight: 500; */
+  /* font-size: 15px; */
+  background-color: #fff;
+  /* color: transparent; */
+  padding: 10px 50px;
+  color: #ec008c;
+  border-radius: 5px;
+}
+.banner-right {
+  position: relative;
+  width: 500px;
+  height: 86.1vh;
+}
+.banner-right img {
+  /* transform: translateX(-50%); */
+  /* transition: bottom 2s, left 2s; */
+  transition: transform ease-in 250ms;
+}
+.banner-right:hover .backPath {
+  transform: translateY(-10px);
+}
+.banner-right:hover .picImg {
+  transform: translateX(-10px);
+}
+.banner-right:hover .frontPath {
+  transform: translateY(10px);
+}
+.backPath {
+  width: 400px;
+  height: auto;
+  position: absolute;
+  right: 20%;
+  top: 25%;
+}
+.picImg {
+  right: 20%;
+  width: 400px;
+  height: auto;
+  position: absolute;
+  z-index: 9999;
+  bottom: 0;
+}
+.frontPath {
+  width: 400px;
+  height: auto;
+  position: absolute;
+  z-index: 99999;
+  right: 0;
+  object-fit: cover;
+  bottom: 0;
+  top: 30%;
+}
+.projects {
+  height: 50vh;
+}
+
+.projects h1 {
+  padding: 60px 0 30px 0;
+  text-align: center;
+  color: #f24e7e;
+}
+
+.projects p {
+  text-align: center;
+  color: #505050;
+}
